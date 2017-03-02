@@ -28,7 +28,6 @@ public class MainActivity extends AppCompatActivity {
     mBtnSend.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {
-//        myRef.setValue();
 
 
       }

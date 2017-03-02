@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
                     message.setMessage(mEdtMessage.getText().toString());
                     message.setId(userId);
                     message.setTime(SystemClock.currentThreadTimeMillis());
-                    myRef.push().setValue(message);
+                    myRef.setValue(message);
                 }
 
             }
@@ -156,8 +156,9 @@ public class MainActivity extends AppCompatActivity {
 
                 // A comment has changed, use the key to determine if we are displaying this
                 // comment and if so displayed the changed comment.
-                Comment newComment = dataSnapshot.getValue(Comment.class);
-                String commentKey = dataSnapshot.getKey();
+//                Message message = dataSnapshot.getValue(Message.class);
+//                mListAdapter.addItem(message);
+
 
                 // ...
             }
@@ -166,9 +167,13 @@ public class MainActivity extends AppCompatActivity {
             public void onChildRemoved(DataSnapshot dataSnapshot) {
                 Log.d(TAG, "onChildRemoved:" + dataSnapshot.getKey());
 
+
                 // A comment has changed, use the key to determine if we are displaying this
                 // comment and if so remove it.
                 String commentKey = dataSnapshot.getKey();
+                Log.e("Message", commentKey + "");
+                Message message = dataSnapshot.getValue(Message.class);
+                mListAdapter.removeMessage(message.getTime());
 
                 // ...
             }

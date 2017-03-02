@@ -28,6 +28,15 @@ public class ChatListAdapter extends BaseAdapter {
         notifyDataSetChanged();
     }
 
+    public void removeMessage(long string) {
+        for (Message message1 : mList) {
+            if (message1.getTime() == string) {
+                mList.remove(message1);
+                notifyDataSetChanged();
+            }
+        }
+    }
+
     public ChatListAdapter(List<Message> mList, Context mContext) {
         this.mList = mList;
         this.mContext = mContext;

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1002319993420",
+    "firebase_url": "https://coderschool-week3.firebaseio.com",
+    "project_id": "coderschool-week3",
+    "storage_bucket": "coderschool-week3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1002319993420:android:d680b26f91975597",
+        "android_client_info": {
+          "package_name": "vn.com.phongnguyen93.week3fbdemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1002319993420-gu4hefld0t2kivu0hm198gp89ue2hlnu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vn.com.phongnguyen93.week3fbdemo",
+            "certificate_hash": "c68e5cc01a68ce3321b2297d7072e4d950a4d1de"
+          }
+        },
+        {
+          "client_id": "1002319993420-lobvsha1fcojr7b0nqdknh2197lso7ej.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHQOQOt42LekKzOPkDywtaVcECC4gJAO0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1002319993420-lobvsha1fcojr7b0nqdknh2197lso7ej.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

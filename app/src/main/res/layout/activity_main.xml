@@ -10,9 +10,17 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="vn.com.phongnguyen93.week3fbdemo.MainActivity">
 
-    <LinearLayout
+    <ListView
+        android:id="@+id/lv_chat"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/ln_send"></ListView>
+
+    <LinearLayout
+        android:id="@+id/ln_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:orientation="horizontal"
         android:weightSum="5">
 
@@ -29,9 +37,4 @@
             android:layout_weight="1"
             android:text="@string/send" />
     </LinearLayout>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
 </RelativeLayout>
